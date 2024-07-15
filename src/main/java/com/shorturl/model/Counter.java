@@ -4,11 +4,10 @@ import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection="URLMapping")
+@Document(collection = "Counter")
 @Data
-public class URLMapping {
+public class Counter {
     @Id
     private String id;
-    private String originalUrl;
-    private String shortUrl;
+    private long sequence;
 }
