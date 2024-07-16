@@ -53,7 +53,7 @@ public class URLShortServiceImpl implements URLShortService {
     }
 
     /**
-     * Method to generate the Unique URL if it already exists generate new one
+     * Method to generate the Unique URL, if  short URL already exists generate new short URL
      * */
     private String generateUniqueShortUrl() {
         String shortUrl;
